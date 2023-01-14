@@ -1,0 +1,105 @@
+﻿@model IEnumerable<Banner>
+
+<div class="banners">
+    <div class="container">
+        <div class="wrapper">
+            <div class="column">
+                <div class="banner flexwrap">
+                    @foreach (var item in Model)
+                    {
+                        <div class="row">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="~/assets/banner/@item.Image" alt="">
+                                </div>
+                                <div class="text-content flexcol">
+                                    <h4>@item.Title</h4>
+                                    <h3>
+                                        @item.Description
+                                    </h3>
+                                    <a asp-controller="Shop" asp-action="Index" class="primary-button">Shop Now</a>
+                                </div>
+                                <a href="#" class="over-link"></a>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="product-categories flexwrap">
+                    <div class="row">
+                        <div class="item">
+                            <div class="image">
+                                <img src="~/assets/banner/procat1.jpg" alt="">
+                            </div>
+                            <div class="content mini-links">
+                                <h4>Beauty</h4>
+                                <ul class="flexcol">
+                                    <li><a asp-controller="Shop" asp-action="Index">Makeup</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Skin Care</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Hair Care</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Fragrance</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Foot & Hand Care</a></li>
+                                </ul>
+
+                                <div class="second-links">
+                                    <a asp-controller="Shop" asp-action="Index" class="view-all">
+                                        View all
+                                        <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="item">
+                            <div class="image">
+                                <img src="~/assets/banner/procat2.jpg" alt="">
+                            </div>
+                            <div class="content mini-links">
+                                <h4>Gadgets</h4>
+                                <ul class="flexcol">
+                                    <li><a asp-controller="Shop" asp-action="Index">Camera</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Cell Phones</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Computers</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">GPS & Navigation</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Headphones</a></li>
+                                </ul>
+
+                                <div class="second-links">
+                                    <a asp-controller="Shop" asp-action="Index" class="view-all">
+                                        View all
+                                        <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="item">
+                            <div class="image">
+                                <img src="~/assets/banner/procat3.jpg" alt="">
+                            </div>
+                            <div class="content mini-links">
+                                <h4>Home Decor</h4>
+                                <ul class="flexcol">
+                                    <li><a asp-controller="Shop" asp-action="Index">Kitchen</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Dining Room</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Pantry</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Great Room</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Breakfast Nook</a></li>
+                                </ul>
+
+                                <div class="second-links">
+                                    <a asp-controller="Shop" asp-action="Index" class="view-all">
+                                        View all
+                                        <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
